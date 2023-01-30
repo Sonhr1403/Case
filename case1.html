@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            position: fixed;
+            color: white;
+            user-select: none;
+        }
+
+        button {
+            width: 60%;
+            height: 50px;
+            background-color: blue;
+            border-radius: 20px;
+            border: none;
+            font-size: large;
+        }
+
+        p {
+            height: 0;
+        }
+
+        h1 {
+            height: 25px;
+        }
+
+        body {
+            margin: 0;
+
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+<div style="position: fixed; inset: 0; text-align: center; vertical-align: center" id="totalStart">
+    <div style="background-color: white; margin: 300px; border-radius: 20px">
+        <p>YOU GOT</p>
+        <h1 id="points">0 Points</h1>
+        <div>
+            <button onclick="startGame()" id="startgame">Press to Start</button>
+        </div>
+    </div>
+</div>
+
+<table>
+    <tr>
+        <td>Score:</td>
+    </tr>
+    <tr>
+        <td id="score"></td>
+    </tr>
+</table>
+<canvas id="thecanvas"></canvas>
+<script src="case1.js"></script>
+</body>
+</html>
